@@ -125,6 +125,7 @@ Track 1 Discretionary Data	Discretionary part of track 1 according to ISO/IEC 78
 Track 2 Discretionary Data	Discretionary part of track 2 according to ISO/IEC 7813	ICC	cn	70 or 77	9F20	var.
 Track 2 Equivalent Data	Contains the data elements of track 2 according to ISO/IEC 7813, excluding start sentinel, end sentinel, and Longitudinal Redundancy Check (LRC), as follows: Primary Account Number Field Separator (Hex D) Expiration Date (YYMM) Service Code Discretionary Data (defined by individual payment systems) Pad with one Hex F if needed to ensure whole bytes	ICC	b n, var. up to 19 b n 4 n 3 n, var. b	70 or 77	57	var. up to 19
 Transaction Amount	Clearing amount of the transaction, including tips and other adjustments	Terminal	n 12	—	—	6
+Transaction Category Code	Indicates the type of transaction being performed, and which may be used in card risk management.	ICC	an		9F53	1
 Transaction Certificate Data Object List (TDOL)	List of data objects (tag and length) to be used by the terminal in generating the TC Hash Value	ICC	b	70 or 77	97	var. up to 252
 Transaction Certificate (TC) Hash Value	Result of a hash function specified in Book 2, Annex B3.1	Terminal	b	—	98	20
 Transaction Currency Code	Indicates the currency code of the transaction according to ISO 4217	Terminal	n 3	—	5F2A	2
