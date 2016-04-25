@@ -74,8 +74,8 @@ Issuer Application Data	Contains proprietary application data for transmission t
 Issuer Authentication Data	Data sent to the ICC for online issuer authentication	Issuer	b	—	91	8-16
 Issuer Code Table Index	Indicates the code table according to ISO/IEC 8859 for displaying the Application Preferred Name	ICC	n 2	A5	9F11	1
 Issuer Country Code	Indicates the country of the issuer according to ISO 3166	ICC	n 3	70 or 77	5F28	2
-Issuer Country Code (alpha2 format)	Indicates the country of the issuer as defined in ISO 3166 (using a 2 character alphabetic code)	ICC	a 2	BF0C or 73	5F55	2
-Issuer Country Code (alpha3 format)	Indicates the country of the issuer as defined in ISO 3166 (using a 3 character alphabetic code)	ICC	a 3	BF0C or 73	5F56	3
+Issuer Country Code Alpha2 format	Indicates the country of the issuer as defined in ISO 3166 (using a 2 character alphabetic code)	ICC	a 2	BF0C or 73	5F55	2
+Issuer Country Code Alpha3 format	Indicates the country of the issuer as defined in ISO 3166 (using a 3 character alphabetic code)	ICC	a 3	BF0C or 73	5F56	3
 Issuer Identification Number (IIN)	The number that identifies the major industry and the card issuer and that forms the first part of the Primary Account Number (PAN)	ICC	n 6	BF0C or 73	42	3
 Issuer Public Key Certificate	Issuer public key certified by a certification authority	ICC	b	70 or 77	90	NCA
 Issuer Public Key Exponent	Issuer public key exponent used for the verification of the Signed Static Application Data and the ICC Public Key Certificate	ICC	b	70 or 77	9F32	1 to 3
