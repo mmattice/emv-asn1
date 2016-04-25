@@ -21,13 +21,6 @@ BEGIN
  IssuerCountryCodeAlpha2format                            ::= [APPLICATION    213] OCTET STRING           -- 5F55 SIMPLE a 2
  IssuerCountryCodeAlpha3format                            ::= [APPLICATION    214] OCTET STRING           -- 5F56 SIMPLE a 3
  AccountType                                              ::= [APPLICATION    215] OCTET STRING           -- 5F57 SIMPLE n 2 
- ApplicationTemplate                                      ::= [APPLICATION      1] EXPLICIT OCTET STRING  -- 61 CONSTRUCTED b 
- FileControlInformationTemplate                           ::= [APPLICATION     15] EXPLICIT OCTET STRING  -- 6F CONSTRUCTED var.
- READRECORDResponseMessageTemplate                        ::= [APPLICATION     16] EXPLICIT OCTET STRING  -- 70 CONSTRUCTED var.
- IssuerScriptTemplate1                                    ::= [APPLICATION     17] EXPLICIT OCTET STRING  -- 71 CONSTRUCTED b
- IssuerScriptTemplate2                                    ::= [APPLICATION     18] EXPLICIT OCTET STRING  -- 72 CONSTRUCTED b
- DirectoryDiscretionaryTemplate                           ::= [APPLICATION     19] EXPLICIT OCTET STRING  -- 73 CONSTRUCTED var.
- ResponseMessageTemplateFormat2                           ::= [APPLICATION     23] EXPLICIT OCTET STRING  -- 77 CONSTRUCTED var.
  ResponseMessageTemplateFormat1                           ::= [                 0] OCTET STRING           -- 80 SIMPLE var.
  AmountAuthorisedBinary                                   ::= [                 1] OCTET STRING           -- 81 SIMPLE b 
  ApplicationInterchangeProfile                            ::= [                 2] OCTET STRING           -- 82 SIMPLE b
@@ -123,5 +116,18 @@ BEGIN
  TransactionCategoryCode                                  ::= [               211] OCTET STRING           -- 9F53 SIMPLE an
  FileControlInformationProprietaryTemplate                ::= [                 5] EXPLICIT OCTET STRING  -- A5 CONSTRUCTED var.
  FileControlInformationIssuerDiscretionaryData            ::= [               140] EXPLICIT OCTET STRING  -- BF0C CONSTRUCTED var.
+ ApplicationTemplate                                      ::= [APPLICATION      1] EXPLICIT OCTET STRING  -- 61 CONSTRUCTED b
+ FileControlInformationTemplate                           ::= [APPLICATION     15] EXPLICIT OCTET STRING  -- 6F CONSTRUCTED var.
+ READRECORDResponseMessageTemplate                        ::= [APPLICATION     16] EXPLICIT OCTET STRING  -- 70 CONSTRUCTED var.
+ IssuerScriptTemplate1                                    ::= [APPLICATION     17] SEQUENCE {             -- 71 CONSTRUCTED b
+    issuerscriptidentifier IssuerScriptIdentifier,
+    issuerscriptcommand    IssuerScriptCommand
+ }
+ IssuerScriptTemplate2                                    ::= [APPLICATION     18] SEQUENCE {             -- 72 CONSTRUCTED b
+    issuerscriptidentifier IssuerScriptIdentifier,
+    issuerscriptcommand    IssuerScriptCommand
+ }
+ DirectoryDiscretionaryTemplate                           ::= [APPLICATION     19] EXPLICIT OCTET STRING  -- 73 CONSTRUCTED var.
+ ResponseMessageTemplateFormat2                           ::= [APPLICATION     23] EXPLICIT OCTET STRING  -- 77 CONSTRUCTED var.
 
 END
