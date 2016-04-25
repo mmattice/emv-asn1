@@ -18,8 +18,8 @@ BEGIN
  IssuerURL                                                ::= [APPLICATION    208] OCTET STRING           -- 5F50 SIMPLE ans
  InternationalBankAccountNumber                           ::= [APPLICATION    211] OCTET STRING           -- 5F53 SIMPLE var.
  BankIdentifierCode                                       ::= [APPLICATION    212] OCTET STRING           -- 5F54 SIMPLE var.
- IssuerCountryCode                                        ::= [APPLICATION    213] OCTET STRING           -- 5F55 SIMPLE a 2
- IssuerCountryCode                                        ::= [APPLICATION    214] OCTET STRING           -- 5F56 SIMPLE a 3
+ IssuerCountryCodeAlpha2format                            ::= [APPLICATION    213] OCTET STRING           -- 5F55 SIMPLE a 2
+ IssuerCountryCodeAlpha3format                            ::= [APPLICATION    214] OCTET STRING           -- 5F56 SIMPLE a 3
  AccountType                                              ::= [APPLICATION    215] OCTET STRING           -- 5F57 SIMPLE n 2 
  ApplicationTemplate                                      ::= [APPLICATION      1] EXPLICIT OCTET STRING  -- 61 CONSTRUCTED b 
  FileControlInformationTemplate                           ::= [APPLICATION     15] EXPLICIT OCTET STRING  -- 6F CONSTRUCTED var.
